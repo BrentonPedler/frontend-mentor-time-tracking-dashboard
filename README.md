@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click Here](https://your-solution-url.com)
-- Live Site URL: [Click Here](https://your-live-site-url.com)
+- Solution URL: [Click Here](https://www.frontendmentor.io/solutions/time-tracking-dashboard-solution-fg-vhN_zJQ)
+- Live Site URL: [Click Here](https://vermillion-bavarois-0f4fc4.netlify.app/)
 
 ## My process
 
