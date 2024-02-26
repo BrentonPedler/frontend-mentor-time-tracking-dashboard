@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				const activityContent = `
 					<div class="activity-card">
 						<div class="activity-card__top-container ${activityClass}">
-							<img src="assets/icon-${activityClass}.svg" />
+							<img src="assets/icon-${activityClass}.svg" alt="${activityClass} icon" />
 						</div>
 						<div class="activity-card__bottom-container">
 							<div class="activity-card__title-container">
