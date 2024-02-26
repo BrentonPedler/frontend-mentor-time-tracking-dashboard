@@ -1,0 +1,262 @@
+.dashboard {
+	background-color: hsl(226, 43%, 10%);
+	color: #fff;
+	font-size: 1.125rem;
+	font-family: "Rubik", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 1rem;
+}
+
+.dashboard__main {
+	background-color: hsl(226, 43%, 10%);
+	max-width: 90rem;
+	width: 100%;
+}
+
+.dashboard__main-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.dashboard-profile-container {
+	background-color: hsl(235, 46%, 20%);
+  width: 20.3rem;
+  display: flex;
+  flex-direction: column;
+	flex-shrink: 0;
+  border-radius: 20px;
+	margin-bottom: 1.875rem;
+}
+
+.dashboard-profile {
+	background-color: hsl(246, 80%, 60%);
+	border-radius: 20px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	gap: 0.938rem;
+	padding: 1.25rem;
+}
+
+.dashboard-profile__img-container {
+	border: 4px solid #fff;
+	border-radius: 50%;
+	width: 5rem;
+	height: 5rem;
+}
+
+.dashboard-profile__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.dashboard-profile__content-container p {
+	color: hsl(236, 100%, 87%);
+	margin: 0;
+}
+
+.dashboard-profile__name {
+	font-size: 1.25rem;
+	font-weight: 300;
+	margin: 0;
+}
+
+.dashboard-profile__button-layout-wrapper {
+	background-color: hsl(235, 46%, 20%);
+	margin: 1.563rem 0;
+  padding: 0 1.25rem;
+}
+
+.dashboard-profile__button-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 1.25rem;
+}
+
+.dashboard-profile__button {
+	background-color: transparent;
+	border: none;
+	color: hsl(235, 45%, 61%);
+	cursor: pointer;
+	font-size: 1.125rem;
+	text-align: left;
+}
+
+.dashboard-profile__button:hover,
+.dashboard-profile__button--active {
+	color: #fff;
+}
+
+.activity-card__container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.875rem;
+}
+
+.activity-card {
+	display: flex;
+	flex-direction: column;
+	width: 20.30rem;
+}
+
+.activity-card__top-container {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	height: 3.75rem;
+}
+
+.activity-card__top-container.work {
+	background-color: hsl(15, 100%, 70%);
+}
+
+.activity-card__top-container.play {
+	background-color: hsl(195, 74%, 62%);
+}
+
+.activity-card__top-container.study {
+	background-color: hsl(348, 100%, 68%);
+}
+
+.activity-card__top-container.exercise {
+	background-color: hsl(145, 58%, 55%);
+}
+
+.activity-card__top-container.social {
+	background-color: hsl(264, 64%, 52%);
+}
+
+.activity-card__top-container.self-care {
+	background-color: hsl(43, 84%, 65%);
+}
+
+.activity-card__top-container img {
+	display: block;
+	margin-left: auto;
+}
+
+.activity-card__bottom-container {
+	background-color: hsl(235, 46%, 20%);
+	border-radius: 20px;
+	margin-top: -1rem;
+	padding: 1.563rem;
+}
+
+.activity-card__bottom-container:hover {
+	background-color: hsl(235, 40%, 34%);
+}
+
+.activity-card__title-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.activity-card__content-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.activity-card__title {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.activity-card__hours {
+	font-size: 1.5rem;
+	font-weight: 300;
+	margin: 0;
+}
+
+.activity-card__previous {
+	color: hsl(236, 100%, 87%);
+	font-size: 1rem;
+	margin: 0.5rem 0;
+}
+
+.attribution {
+	font-size: 0.688rem;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 850px) {
+	.dashboard__main-wrapper {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.dashboard-profile-container {
+		flex-basis: 15.938rem;
+		margin-right: 1.875rem;
+		overflow: hidden;
+		width: 15.938rem;
+		margin-bottom: 0;
+	}
+
+	.dashboard-profile {
+		display: block;
+	}
+
+	.dashboard-profile__img-container {
+		margin-bottom: 1.875rem;
+	}
+
+	.dashboard-profile__name {
+		font-size: 2rem;
+		margin-bottom: 4.688rem;
+	}
+
+	.dashboard-profile__content-container p {
+		margin: 1.125rem 0;
+	}
+
+	.dashboard-profile__button-layout-wrapper {
+		margin: auto 0;
+		padding: 1.25rem;
+	}
+
+	.dashboard-profile__button-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+
+	.activity-card {
+		width: 15.938rem;
+	}
+
+	.activity-card__container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.activity-card__content-container {
+		display: block;
+	}
+
+	.activity-card__hours {
+		font-size: 3rem;
+		margin: 1rem 0;
+	}
+}
+
+@media (min-width: 1150px) {
+	.dashboard__main-wrapper {
+		align-items: stretch;
+	}
+
+	.activity-card__container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
